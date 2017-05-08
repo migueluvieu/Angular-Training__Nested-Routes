@@ -17,7 +17,7 @@ Se utiliza:
 </ul> 
 
 ## Demo
-Desplegada en firebase [aqui] (https://colores-d5ee3.firebaseapp.com/) 
+Desplegada en firebase [aquí](https://colores-d5ee3.firebaseapp.com/) 
 
 <p align="center"> 
    <span><img src="screenshots/demo.gif" width="430px"/></span> 
@@ -150,7 +150,7 @@ Importar en css uno de los temas del prebuilt y la material icons . Para ello en
 ```
 
 ## Documentación
-Ver Documentacion de la aplicación [aqui] (https://colores-d5ee3.firebaseapp.com/documentation/) 
+Ver Documentacion de la aplicación [aqui](https://colores-d5ee3.firebaseapp.com/documentation/) 
 
 Se utiliza [compodoc](https://compodoc.github.io/website/)
 
