@@ -26,14 +26,14 @@ Desplegada en firebase [aquí](https://colores-d5ee3.firebaseapp.com/)
 
 ## Navegación entre componentes 
 
-En esta aplicación se define un componente padre (se utiliza el app.component) y hijos (RedComponent, BlueComponent y GreenComponent. El app.component dispondrá de un router-outlet para cargarlos. Se cargan con lazy-loading en este caso (se explica a continuación)
+En esta aplicación se define un componente padre (se utiliza el app.component) y hijos (RedComponent, BlueComponent y GreenComponent. El app.component dispondrá de un router-outlet para renderizarlos. Se cargan con lazy-loading en este caso (se explica a continuación...)
 
 ```bash
   { path: 'blue', loadChildren: 'app/blue/blue.module#BlueModule' },
   { path: 'red', loadChildren: 'app/red/red.module#RedModule' },
   { path: 'green', loadChildren: 'app/green/green.module#GreenModule' }
 ```
-Cada uno de los componentes tiene otros 3 hijos 
+Cada uno de los componentes tiene otros 3 componentes hijos (dentro de su módulo correspondiente) 
 <ul>
  <li>BlueComponent:
    <ul>
@@ -58,7 +58,7 @@ Cada uno de los componentes tiene otros 3 hijos
  </li>
 </ul>
 
-Las sub-rutas para Redcomponent se definen de la siguiente forma:
+Las rutas hijas de Redcomponent se definen de la siguiente forma:
 ```bash
   const routes: Routes = [
   {
