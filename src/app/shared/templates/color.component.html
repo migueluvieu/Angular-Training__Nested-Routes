@@ -1,0 +1,17 @@
+<section class="component md-border">
+    <div class="nav-component">
+        <a [routerLink]="['light']"> <i class="material-icons md-small md-border md-round {{store.colorLight}}">colorize</i> </a>
+        <a [routerLink]="['medium']"> <i class="material-icons md-small md-border md-round {{store.colorMedium}}">colorize</i> </a>
+        <a [routerLink]="['dark']"> <i class="material-icons md-small md-border md-round {{store.colorDark}}">colorize</i> </a>
+    </div>
+    <div class="principal-component">
+        <router-outlet></router-outlet>
+
+    </div>
+    <p class="{{store.colorMedium}}">{{store.component}} <span class='orange'>router-outlet</span> </p>
+
+    <color-from [param]="store.paramFrom"></color-from>
+
+    <color-submenu [component]="store.component"></color-submenu>
+
+</section>

@@ -1,0 +1,21 @@
+<!--utilización del if else de angular4-->
+<aside *ngIf="paramExist; then parametroRecibido; else parametroNoRecibido"></aside>
+<ng-template #parametroRecibido>
+    <div [ngSwitch]="param">
+        <p *ngSwitchCase="blueComponent" class="blue">Navigate from {{param}}
+            <i class="material-icons md-small blue">brightness_1</i>
+        </p>
+        <p *ngSwitchCase="redComponent" class="red">Navigate from {{param}}
+            <i class="material-icons md-small red">brightness_1</i>
+        </p>
+        <p *ngSwitchCase="greenComponent" class="green">Navigate from {{param}}
+            <i class="material-icons md-small green">brightness_1</i>
+        </p>
+        <p *ngSwitchDefault>Navigate from {{param}}
+        </p>
+    </div>
+
+</ng-template>
+<ng-template #parametroNoRecibido>
+    <p> No parameter </p>
+</ng-template>

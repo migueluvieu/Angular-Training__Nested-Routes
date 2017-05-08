@@ -1,0 +1,105 @@
+@import '~https://fonts.googleapis.com/icon?family=Material+Icons';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+.root-component {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+    margin-left: 80px;
+    color: white
+}
+
+.avatar {
+    color: brown;
+    text-decoration: underline
+}
+
+.component {
+    background-color: lightblue !important;
+    text-align: center;
+}
+
+.sub-component {
+    background-color: aliceblue !important;
+}
+
+.mat-sidenav-container {
+    background-color: white !important;
+}
+
+.nav-component {
+    padding: 0.3rem 0.3rem
+}
+
+body {
+    margin: 10;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.md-border {
+    border: 1px solid cadetblue
+}
+
+.md-border-dotted {
+    border: 2px dotted #94250C;
+}
+
+.md-big {
+    font-size: 10rem;
+}
+
+.md-medium {
+    font-size: 2.8rem
+}
+
+.md-small {
+    font-size: 2rem
+}
+
+.md-round {
+    border-radius: 50px;
+}
+
+.red {
+    color: red;
+}
+
+.red-light {
+    color: #E88166
+}
+
+.red-dark {
+    color: #94250C
+}
+
+.green {
+    color: green;
+}
+
+.green-light {
+    color: #46E847
+}
+
+.green-dark {
+    color: #2C4F0A;
+}
+
+.blue {
+    color: blue;
+}
+
+.blue-light {
+    color: #6CB0FF
+}
+
+.blue-dark {
+    color: #1B148C
+}
+
+.orange {
+    color: orangered
+}

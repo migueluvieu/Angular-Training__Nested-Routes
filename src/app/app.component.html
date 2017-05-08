@@ -1,0 +1,27 @@
+<md-toolbar color="accent">
+    <span class="avatar"><img src="./../assets/avatar.png" /></span>
+    <h1 class="title">C<span class="green">o</span>L<span class="red">o</span>R<span class="blue">e</span>S</h1>
+</md-toolbar>
+
+<md-sidenav-container class="container md-border" #contenedor>
+    <md-sidenav #sidenav [mode]="sidenavMode" [opened]="open" class='sidenav'>
+        <div class="example-scrolling-content">
+            <md-list>
+                <md-list-item>
+                    <a [routerLink]="['/red','sidemenu']"> <i class="material-icons md-medium red">format_color_fill</i> </a>
+                </md-list-item>
+                <md-list-item>
+                    <a [routerLink]="['/blue','sidemenu']"> <i class="material-icons md-medium blue">format_color_fill</i> </a>
+                </md-list-item>
+                <md-list-item>
+                    <a [routerLink]="['/green','sidemenu']"> <i class="material-icons md-medium green">format_color_fill</i> </a>
+                </md-list-item>
+            </md-list>
+        </div>
+    </md-sidenav>
+    <div #principal class="principal">
+        <router-outlet></router-outlet>
+        <p>AppComponent <span class='orange'>router-outlet</span> </p>
+
+    </div>
+</md-sidenav-container>
