@@ -144,6 +144,8 @@ imports: [
   ```
 Importar en css uno de los temas del prebuilt y la material icons . Para ello en styles.css
 
+En el resto de módulos no se añadiría el forRoot()...
+
 ```bash
 @import '~https://fonts.googleapis.com/icon?family=Material+Icons';
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
@@ -175,9 +177,13 @@ npm run compodoc
 ```
 Se genera carpeta /documentation
 
+
 ## Deploy firebase
 Se crea script en el package.json que borra /dist, genera el build para prod, documentación y despliega en firebase  
-
 ```bash
- "deploy-firebase": "del dist && ng build --env=prod --aot && npm run compodoc && move documentation dist && firebase deploy"
+"scripts": {
+    ...
+  "compodoc": "./node_modules/.bin/compodoc -p tsconfig.json -a screenshots",
+  "deploy-firebase": "del dist && ng build --env=prod --aot && npm run compodoc && move documentation dist && firebase deploy"
+}
 ```
